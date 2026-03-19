@@ -1,0 +1,2 @@
+# StrategicAdvisorAI-Bannerlord
+Mod bannerlord
