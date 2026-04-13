@@ -1,0 +1,8 @@
+{
+  "FeatureDim": 32,
+  "LearningRate": 0.05,
+  "Epsilon": 0.15,
+  "BattlesLearned": 0,
+  "Weights": {},
+  "TimesChosen": {}
+}

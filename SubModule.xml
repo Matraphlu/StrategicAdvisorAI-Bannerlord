@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Module>
+  <Name value="Strategic Advisor AI" />
+  <Id value="StrategicAdvisorAI" />
+  <Version value="v1.0.0" />
+  <SingleplayerModule value="true" />
+  <MultiplayerModule value="false" />
+  <Official value="false" />
+  <DependedModules>
+    <DependedModule Id="Native" />
+    <DependedModule Id="SandBoxCore" />
+    <DependedModule Id="Sandbox" />
+    <DependedModule Id="CustomBattle" />
+    <DependedModule Id="BirthAndDeath" />
+  </DependedModules>
+  <SubModules>
+    <SubModule>
+      <Name value="StrategicAdvisorAI" />
+      <DLLName value="StrategicAdvisorAI.dll" />
+      <SubModuleClassType value="StrategicAdvisorAI.SubModule" />
+      <Tags>
+        <Tag key="DedicatedServerType" value="none" />
+      </Tags>
+    </SubModule>
+  </SubModules>
+  <Xmls />
+</Module>
