@@ -1,0 +1,81 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net472</TargetFramework>
+		<LangVersion>10.0</LangVersion>
+		<Nullable>disable</Nullable>
+		<ImplicitUsings>disable</ImplicitUsings>
+		<AssemblyName>StrategicAdvisorAI</AssemblyName>
+		<RootNamespace>StrategicAdvisorAI</RootNamespace>
+		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+		<OutputPath>..\bin\Win64_Shipping_Client\</OutputPath>
+		<PlatformTarget>x64</PlatformTarget>
+		<Prefer32Bit>false</Prefer32Bit>
+		<RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<BannerlordDir Condition="'$(BannerlordDir)' == ''">F:\SteamLibrary\steamapps\common\Mount &amp; Blade II Bannerlord</BannerlordDir>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Reference Include="System" />
+		<Reference Include="System.Core" />
+		<Reference Include="System.Xml" />
+		<Reference Include="System.Xml.Linq" />
+		<Reference Include="System.Runtime.Serialization" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Reference Include="TaleWorlds.Core">
+			<HintPath>$(BannerlordDir)\bin\Win64_Shipping_Client\TaleWorlds.Core.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+		<Reference Include="TaleWorlds.DotNet">
+			<HintPath>$(BannerlordDir)\bin\Win64_Shipping_Client\TaleWorlds.DotNet.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+		<Reference Include="TaleWorlds.Engine">
+			<HintPath>$(BannerlordDir)\bin\Win64_Shipping_Client\TaleWorlds.Engine.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+		<Reference Include="TaleWorlds.GauntletUI">
+			<HintPath>$(BannerlordDir)\bin\Win64_Shipping_Client\TaleWorlds.GauntletUI.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+		<Reference Include="TaleWorlds.GauntletUI.Data">
+			<HintPath>$(BannerlordDir)\bin\Win64_Shipping_Client\TaleWorlds.GauntletUI.Data.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+		<Reference Include="TaleWorlds.InputSystem">
+			<HintPath>$(BannerlordDir)\bin\Win64_Shipping_Client\TaleWorlds.InputSystem.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+		<Reference Include="TaleWorlds.Library">
+			<HintPath>$(BannerlordDir)\bin\Win64_Shipping_Client\TaleWorlds.Library.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+		<Reference Include="TaleWorlds.Localization">
+			<HintPath>$(BannerlordDir)\bin\Win64_Shipping_Client\TaleWorlds.Localization.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+		<Reference Include="TaleWorlds.MountAndBlade">
+			<HintPath>$(BannerlordDir)\bin\Win64_Shipping_Client\TaleWorlds.MountAndBlade.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+		<Reference Include="TaleWorlds.ObjectSystem">
+			<HintPath>$(BannerlordDir)\bin\Win64_Shipping_Client\TaleWorlds.ObjectSystem.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+		<Reference Include="TaleWorlds.ScreenSystem">
+			<HintPath>$(BannerlordDir)\bin\Win64_Shipping_Client\TaleWorlds.ScreenSystem.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+	</ItemGroup>
+
+	<ItemGroup>
+		<Compile Remove="FeatureSnapshot.cs" />
+		<Compile Remove="PlanText.cs" />
+		<Compile Remove="AI\BrainState.cs" />
+	</ItemGroup>
+</Project>
